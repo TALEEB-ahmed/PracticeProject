@@ -1,0 +1,469 @@
+/* ٍstart globl Variable */
+:root {
+    --main-color: #10cab7;
+    --section-padding: 6opx;
+    --section-bacground--: #f7f7f7;
+}
+
+/* Start Globl Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Work Sans", sans-serif;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Small */
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+
+    /* Large */
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (max-width:800px) {
+    .portfolio .special-heading {
+        font-size: 70px;
+    }
+}
+
+/*Start Component */
+.servirces .container {
+    padding: 0px;
+    /* margin: 0; */
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.special-heading {
+    color: #c1cccd;
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    letter-spacing: -3px;
+}
+
+.special-heading+p {
+    color: #797979;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 0px;
+    margin: -25px 0 0;
+
+}
+
+/*End Component */
+
+
+/* start Header */
+.header {
+    padding: 26px 16px 7px 11px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.header .container .logo {
+    width: 60px;
+    margin-top: -12px;
+}
+
+.header .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .links .icon span {
+    background-color: #191818;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 3px;
+
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.4s;
+
+}
+
+.header .links .icon span:nth-child(3) {
+    width: 100%;
+}
+
+.header .links ul {
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    width: 170px;
+    background-color: lemonchiffon;
+    padding-left: 9px;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    display: none;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-color: transparent transparent rgb(131, 131, 140) transparent;
+    border-style: solid;
+    position: absolute;
+    top: -20px;
+    right: 7.5px
+}
+
+.header .links ul li a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+
+}
+
+.header .links ul a:hover {
+    padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #a7a6a6;
+
+
+}
+
+/* End Header */
+/* <! -- Start Landing --> */
+.landing {
+    background-image: url(a-dramatic-black-and-white-landscape-captures-a-rugged-snow-capped-mountain-peak-towering-over-a-dark-forest-photo.webp);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+
+.landing .intro-text {
+    position: absolute;
+    top: calc(50%/2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.landing .intro-text h1 {
+    color: var(--main-color);
+    margin: 0;
+}
+
+.landing .intro-text p {
+    font-weight: bolder;
+    line-height: 1.8;
+    width: 448px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Start Features */
+.features {
+    background-color: #cdcdcd;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.min1,
+.min2,
+.min3 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    /*     
+    flex-direction: column;
+    align-items: center; */
+    /* gap: 50px; */
+    margin-bottom: 10px;
+}
+
+.features h1 {
+    margin: 5px;
+    max-width: 260px;
+    overflow-wrap: anywhere;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.features p {
+    line-height: 2.3;
+    margin: 0;
+    max-width: 260px;
+    overflow-wrap: anywhere;
+    color: #777;
+    line-height: 1.2;
+}
+
+
+.features img {
+    width: 60px;
+    text-align: center;
+    margin: 50px auto 40px;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(40%) saturate(695%) hue-rotate(126deg) brightness(92%) contrast(89%);
+}
+
+/* End Features */
+/* start services */
+.services {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background-color: #ffffff;
+}
+
+.services-contente {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px
+}
+
+.services-contente .srv {
+    margin: 10px;
+    padding: 0;
+    display: flex;
+
+}
+
+.services-contente .col .imag {
+    position: relative;
+
+
+}
+
+.services-contente .col img {
+    width: 237px;
+    display: block;
+    padding: 0;
+    margin: 30px 0 0 73px;
+
+    position: relative;
+}
+
+.services-contente .col .imag::before {
+    content: "";
+    width: 60px;
+    height: calc(100% + 40px);
+    position: absolute;
+    top: -38px;
+    left: 255px;
+    background-color: #4a6571;
+    margin: 10px;
+    padding: 10px;
+    z-index: 1;
+
+}
+
+@media(max-width:767px) {
+    .services-contente .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.services-contente .srv i {
+    color: var(--main-color);
+    flex-basis: 60px;
+    margin: -1px 0px 0 0;
+    font-size: 29px;
+
+}
+
+.services-contente .srv .text {
+    flex: 1;
+}
+
+.services-contente .srv h3 {
+    margin: 0px 0 12px 0;
+}
+
+.services-contente .srv p {
+    line-height: 1.4;
+    color: #777;
+    font-weight: 300;
+    font-size: 13px
+}
+
+@media (max-width: 755px) {
+    .services-contente .col .imag {
+        display: none;
+    }
+}
+
+.services>.container>.special-heading {
+    position: relative;
+    top: -20px;
+}
+
+/*End services */
+/* Start portfolio */
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-bacground--);
+}
+
+.portfolio .portfolio-contente {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    height: 100%;
+    padding-bottom: 44px;   
+
+}
+
+.portfolio .portfolio-contente .card {
+    background-color: white;
+}
+
+.portfolio .portfolio-contente .card img {
+    width: 100%;
+    height: 220px;
+    /* in case of imges have a different size */
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio .portfolio-contente .card .info {
+    padding: 20px;
+}
+
+.portfolio .portfolio-contente .card .info h3 {
+    margin: 0;
+}
+
+.portfolio .portfolio-contente .card .info p {
+    margin-bottom: 0;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* End portfolio */
+/* start about */
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 60px);
+}
+.about .about-contente{
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .about-contente .image{
+    position: relative;
+    width: 250px;
+    height: 375px;
+    /* height: 100%; */ 
+}
+.about .about-contente .image::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    /* left: 50px; */
+    background-color: #d7caca;
+    width: 103px;
+    height: calc(100% + 60px);
+    z-index: -1;
+}
+
+.about .about-contente .image::after{
+content: '';
+    position: absolute;
+    width: 100px;
+    height: 267px;
+    border-bottom: 60px solid #10cab7;
+    background-color: transparent;
+    border-left: 60px solid #10cab7;
+    top: -20px;
+    left: 213px;
+    z-index: -1;
+}
+.about .about-contente .image img{
+    max-width: 100%;
+}
+
+.about .about-contente .text{
+    flex-basis : calc(100% - 500px)    ;
+
+}   
+/* end about */
